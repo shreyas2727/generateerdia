@@ -1,0 +1,23 @@
+by veryacademy(youtube channel)
+this tut will generate automatic ER-Diagram (similar to er diagram) in this video
+
+first we install django-extensions package from pypi
+
+then we download software from graphviz.org the link for it is in readdocs of django-extensions goto command extensions then graph model and then there is Graphviz link in blue color.
+
+the software is putten itself in the tutorial directory of this project.
+
+then install this library::pip install pyparsing pydot
+
+also put this into settings.py::
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
+
+and to generate image run this command::
+
+python manage.py graph_models --pydot -a -g -o my_project_visualized.png
+
+for more details::
+https://django-extensions.readthedocs.io/en/latest/graph_models.html

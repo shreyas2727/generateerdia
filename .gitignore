@@ -1,0 +1,8 @@
+db.sqlite3
+venv/*
+myvenv/*
+.idea/*
+diaproject/__pycache__/
+.vscode/
+diaapp/__pycache__/
+diaapp/migrations/
